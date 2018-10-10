@@ -1,0 +1,34 @@
+
+pragma solidity ^0.4.4;
+
+ contract MyTestContract {
+
+    struct User { 
+  
+         string fname ;
+         string lastname ;
+         string IDCard  ; 
+         bool Registor  ;
+ 
+   } 
+   
+    mapping (uint => User) Users ;
+
+   function insertUser (uint _item , string _fName , string _lName , string _ID , bool _reg ) public returns ( string Status ) {
+
+        Users[_item].fname = _fName  ;
+        Users[_item].lastname = _lName  ; 
+        Users[_item].IDCard = _ID  ;   
+        Users[_item].Registor = _reg  ;
+        return "INSERT USER OK" ;
+ 
+   } 
+
+ function printUser (uint _item) public view returns ( uint Item , string Firstname , string LastName , string IDCard , bool RegStatus )
+ {
+    
+    return ( _item , Users[_item].fname , Users[_item].lastname , Users[_item].IDCard , Users[_item].Registor   )  ; 
+  
+  } 
+
+}
