@@ -1,0 +1,18 @@
+
+pragma solidity ^0.4.4; 
+
+contract MyTestContract {
+   
+ mapping ( uint => string  )  LabelName ; 
+   
+
+  function insertLabel (uint _item , string lName) public returns ( string Status ) {
+        LabelName[_item] = lName  ; 
+        return "OK" ;
+    } 
+
+ function printLabel (uint _item) public view returns ( string Label ) {
+        return ( LabelName[_item] )  ; 
+    } 
+
+}
