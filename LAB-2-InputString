@@ -3,8 +3,8 @@ pragma solidity ^0.4.4;
 contract alpha {
     
     string public message = "Hello World" ;
-    function clickme (string name) public view returns ( string Name ) {
-        return ( name )  ; 
+    function clickme (string name) public view returns ( string Name , string Msg  ) {
+        return ( name , message )  ; 
     }
     
 }
