@@ -5,7 +5,7 @@
 
 - mapping ( address => uint ) balance ;
 //  Unit balance[balance]
-# Arrer 1x3 
+# Arrer 1x2 
 - mapping (address => mapping (address => uint)) public allowed;
 // Uint values [address][address]
 - mapping (uint => mapping (uint => uint)) public allowed;
