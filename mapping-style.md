@@ -19,3 +19,11 @@
 - mapping (uint => mapping (address => mapping (address => uint ))) public index_allowed;
 
 // Unit values [uint][address][address] ; 
+
+# Arrer 1x2 with struct   
+struct man {
+
+string name ;
+
+string lastname ;
+}
