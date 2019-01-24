@@ -21,9 +21,14 @@
 // Unit values [uint][address][address] ; 
 
 # Arrer 1x2 with struct   
-struct man {
 
-string name ;
-
-string lastname ;
+```ruby
+struct Man {
+  string name ;
+  string lastname ;
 }
+
+mapping (address => mapping (uint => Man)) public Mans;
+
+// Man Mans [address][unit] 
+```
