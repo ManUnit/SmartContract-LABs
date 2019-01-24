@@ -13,12 +13,12 @@
 ```ruby
 - mapping (address => mapping (address => uint)) public allowed;
 
-// Uint values [address][address]
+// Uint allowed [address][address]
 
 
 - mapping (uint => mapping (uint => uint)) public index_allowed;
 
-// Unit values [uint][uint] ; 
+// Unit index_allowed [uint][uint] ; 
 ```
 # Arrer 1x3 
 ```ruby
