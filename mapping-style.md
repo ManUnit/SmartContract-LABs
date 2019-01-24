@@ -4,7 +4,7 @@
 # Arrer 1x1 
 
 - mapping ( address => uint ) balance ;
-//  Unit balance[balance]
+//  Unit balance[address]
 # Arrer 1x2 
 - mapping (address => mapping (address => uint)) public allowed;
 
