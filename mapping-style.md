@@ -1,14 +1,14 @@
 # SmartContract Mapping Style 
 
 --------- 
-# Arrer 1x1 
+# Array 1x1 
 
 ```ruby
 - mapping ( address => uint ) balance ;
 //  Unit balance[address]
 
 ```
-# Arrer 1x2 
+# Array 1x2 
 
 ```ruby
 - mapping (address => mapping (address => uint)) public allowed;
@@ -20,7 +20,7 @@
 
 // Unit index_allowed [uint][uint] ; 
 ```
-# Arrer 1x3 
+# Array 1x3 
 ```ruby
 - mapping (address => mapping (address => mapping (address => uint ))) public allowed;
 
@@ -29,7 +29,7 @@
 
 // Unit values [uint][address][address] ; 
 ```
-# Arrer 1x2 with struct   
+# Array 1x2 with struct   
 
 ```ruby
 struct Man {
