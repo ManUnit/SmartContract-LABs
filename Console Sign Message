@@ -1,0 +1,12 @@
+# Sign Measage
+Ethereum : 
+> personal.newAccount("Password")
+"0x44863d3fded780079f3c0ed74b6a7bd33e700a45"
+> eth.sign("0x44863d3fded780079f3c0ed74b6a7bd33e700a45",web3.sha3("Test message"))
+> personal.unlockAccount("0x44863d3fded780079f3c0ed74b6a7bd33e700a45")
+Unlock account 0x44863d3fded780079f3c0ed74b6a7bd33e700a45
+Passphrase:
+true
+> eth.sign("0x44863d3fded780079f3c0ed74b6a7bd33e700a45",web3.sha3("Test message"))
+"0x1d81bf93a48aee1ade01e430a78b86ead851c1a4aaf47308fe0a20e6213a43467c373c41ee0860858c1c5756131a563e21ad93958b7e528c8341e692ee139ad71b"
+>
